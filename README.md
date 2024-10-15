@@ -6,6 +6,15 @@ This Django project enables users to upload CSV or Excel files, view detailed su
 - **Upload CSV/Excel files** and view summaries.
 - **Email the summary** to a specified address (configuration required).
 
+##Usage
+Upload a CSV or Excel file.
+View the summary of the uploaded file.
+If configured, the summary will be emailed; status will be displayed on the page.
+
+##Troubleshooting
+Email Issues: Verify your email settings and account security settings.
+File Upload Failures: Ensure the file format is valid.
+
 ## Configure Email Settings
 In `settings.py`, set your email credentials:
 ```python
@@ -17,10 +26,4 @@ EMAIL_HOST_USER = 'your_mail'
 EMAIL_HOST_PASSWORD = 'your_pswrd'
 
 
-Usage
-Upload a CSV or Excel file.
-View the summary of the uploaded file.
-If configured, the summary will be emailed; status will be displayed on the page.
-Troubleshooting
-Email Issues: Verify your email settings and account security settings.
-File Upload Failures: Ensure the file format is valid.
+
